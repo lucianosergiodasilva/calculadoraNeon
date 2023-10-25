@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora v2</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+  <div id="calc" class="texto-neon">
+    <div id="operations">
+      <div id="previous-operation" class="neon"></div>
+      <div id="current-operation" class="neon"></div>
+    </div>
+    <div id="buttons-container">
+
+      <button id="limpar" data-funcao="limpar" class="texto-neon">C</button>
+      <button id="del" data-funcao="backspace" class="texto-neon">DEL</button>
+      <button class="operator texto-neon">%</button>
+      <!-- <button class="operator texto-neon" data-operador="÷">/</button> -->
+      <button class="operator texto-neon" data-operador="÷"><span>/</span></button>
+
+      <button class="number texto-neon">7</button>
+      <button class="number texto-neon">8</button>
+      <button class="number texto-neon">9</button>
+      <!-- <button class="operator texto-neon" data-operador="&times;">*</button> -->
+      <button class="operator texto-neon" data-operador="vezes"><span>*</span></button>
+
+      <button class="number texto-neon">4</button>
+      <button class="number texto-neon">5</button>
+      <button class="number texto-neon">6</button>
+      <button class="operator texto-neon">-</button>
+
+      <button class="number texto-neon">1</button>
+      <button class="number texto-neon">2</button>
+      <button class="number texto-neon">3</button>
+      <button class="operator texto-neon">+</button>
+
+      <button class="ponto texto-neon">.</button>
+      <button class="number texto-neon">0</button>
+      <button id="equal-btn" data-funcao="igual" class="texto-neon">=</button>
+    </div>
+  </div>
+
+  <script src="./script/script2.js"></script>
+</body>
+
+</html>
