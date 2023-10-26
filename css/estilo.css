@@ -13,11 +13,9 @@ body {
     height: 100vh;
     color: #14fff1;
     background-color: #202631;
-
 }
 
 #calc {
-    width: 400px;
     padding: .5em;
     background-color: #202631;
     display: flex;
@@ -26,6 +24,8 @@ body {
     font-family: 'Tilt Neon', sans-serif;
     border: 3px solid #14fff1;
     position: relative;
+    width: 90%;
+    height: 72.5%;
 }
 
 #calc::before {
@@ -33,8 +33,8 @@ body {
     content: '';
     position: absolute;
     background-color: #14fff1;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 90%;
     left: 0;
     top: 60%;
     transform: perspective(64px) rotateX(40deg) scale(1, 0.10);
@@ -82,9 +82,9 @@ body {
 }
 
 #buttons-container button {
-    border: 3px solid #14fff1;
+    border: 2px solid #14fff1;
     border-radius: 5px;
-    height: 4em;
+    height: 3em;
     font-size: 1.5em;
     background-color: transparent;
     cursor: pointer;
@@ -108,21 +108,24 @@ body {
 
 #buttons-container .operator {
     font-size: 2em;
-    height: 3em;
+    height: 2.3em;
 }
 
 .operator[data-operador="÷"],
 .operator[data-operador="vezes"] {
     position: relative;
 }
-.operator[data-operador="÷"] > span,
-.operator[data-operador="vezes"] > span {
+
+.operator[data-operador="÷"]>span,
+.operator[data-operador="vezes"]>span {
     opacity: 0;
     position: absolute;
 }
+
 .operator[data-operador="÷"]::after {
     content: '÷';
 }
+
 .operator[data-operador="vezes"]::after {
     content: 'x';
 }
@@ -142,4 +145,11 @@ body {
 
 .animate__animated.animate__rubberBand {
     --animate-duration: 0.5s;
+}
+
+@media screen and (min-width: 600px) {
+    #calc {
+        width: 40%;
+        height: 56%;
+    }
 }
