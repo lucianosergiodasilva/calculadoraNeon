@@ -149,7 +149,7 @@ body {
 
 @media screen and (min-width: 600px) {
     #calc {
-        width: 40%;
+        width: 20%;
         height: 56%;
     }
 }
