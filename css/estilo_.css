@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #14fff1;
+  background-color: #202631;
+}
+
+#calc {
+  padding: 0.5em;
+  background-color: #202631;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  font-family: "Tilt Neon", sans-serif;
+  border: 3px solid #14fff1;
+  position: relative;
+  /* width: 90%; */
+  /* height: 72.5%; */
+}
+
+#calc::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background-color: #14fff1;
+  /* width: 80%; */
+  /* height: 90%; */
+  left: 0;
+  top: 60%;
+  transform: perspective(64px) rotateX(40deg) scale(1, 0.1);
+  filter: blur(64px);
+  opacity: 0.5;
+}
+
+#calc::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #14fff1;
+  box-shadow: 0 0 128px 32px #14fff1;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+#operations {
+  text-align: right;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#previous-operation {
+  padding: 0.2em;
+  overflow-wrap: break-word;
+  min-height: 1.6em;
+  font-size: 1.5em;
+}
+
+#current-operation {
+  min-height: 1.6em;
+  font-size: 3em;
+  padding: 0.2em;
+  overflow-wrap: break-word;
+}
+
+#buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+#buttons-container button {
+  border: 2px solid #14fff1;
+  border-radius: 5px;
+  height: 3em;
+  font-size: 1.5em;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Tilt Neon", sans-serif;
+  color: #14fff1;
+  position: relative;
+}
+
+#buttons-container button.efeitoClique::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #14fff1;
+  box-shadow: 0 0 128px 32px #14fff1;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+#buttons-container .operator {
+  font-size: 2em;
+  height: 2.3em;
+}
+
+.operator[data-operador="÷"],
+.operator[data-operador="vezes"] {
+  position: relative;
+}
+
+.operator[data-operador="÷"] > span,
+.operator[data-operador="vezes"] > span {
+  opacity: 0;
+  position: absolute;
+}
+
+.operator[data-operador="÷"]::after {
+  content: "÷";
+}
+
+.operator[data-operador="vezes"]::after {
+  content: "x";
+}
+
+#buttons-container #equal-btn {
+  grid-column: span 2;
+}
+
+.neon {
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.3),
+    0 0 29px #14fff1;
+}
+
+.texto-neon {
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.3),
+    0 0 29px #14fff1;
+  box-shadow:
+    inset 0 0 12px #14fff1,
+    0 0 12px #14fff1;
+}
+
+.animate__animated.animate__rubberBand {
+  --animate-duration: 0.5s;
+}
+
+@media screen and (min-width: 600px) {
+  #calc {
+    width: 20%;
+    height: 56%;
+  }
+}
