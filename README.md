@@ -40,6 +40,6 @@ O projeto foi construído utilizando as três tecnologias pilares do desenvolvim
 ### 📥 Clonando o projeto
 Você pode clonar este repositório para testar em sua máquina:
 ```bash
-   git clone https://github.com/lucianosergiodasilva/calculadoraNeon.git
+   git clone https://github.com/lucianosergiodasilva/calculadoraNeon-main.git
 
    ```
