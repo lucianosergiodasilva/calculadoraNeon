@@ -114,14 +114,5 @@ todosOsBotoes.forEach((botao) => {
       },
       { once: true },
     );
-
-    // let animacaoAtiva = setTimeout(() => {
-    //   botao.classList.add("animate__animated", "animate__rubberBand");
-    //     botao.classList.add("efeitoClique");
-    // }, 0.5);
-
-    // setTimeout(() => {
-    //     botao.classList.remove("efeitoClique");
-    // }, 1.5);
   });
 });
