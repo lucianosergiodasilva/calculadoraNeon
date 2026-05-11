@@ -104,7 +104,7 @@ todosOsBotoes.forEach((botao) => {
   // Adiciona um evento de click
   botao.addEventListener("click", ({ target }) => {
     // Adiciona a classe de animação
-    botao.classList.add("efeitoClique");
+    botao.classList.add("animate__animated", "animate__rubberBand", "efeitoClique");
     // Adiciona outro evento de click
     botao.addEventListener(
       "animationend",
