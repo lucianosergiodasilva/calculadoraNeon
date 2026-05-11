@@ -8,7 +8,8 @@ Este projeto é uma calculadora web simples e intuitiva que realiza as operaçõ
 
 Aqui está a aparência da calculadora com o seu tema Neon:
 
-<img width="1454" height="800" alt="calculadora-neon" src="https://github.com/user-attachments/assets/6fbb4414-ffb1-4b33-867d-d4f0c0567e1f" />
+<img width="1454" height="800" alt="calculadora-neon" src="https://github.com/user-attachments/assets/ce4e09ac-ed4b-4d19-84b7-05f17d35da0a" />
+
 
 
 
@@ -40,6 +41,6 @@ O projeto foi construído utilizando as três tecnologias pilares do desenvolvim
 ### 📥 Clonando o projeto
 Você pode clonar este repositório para testar em sua máquina:
 ```bash
-   git clone https://github.com/lucianosergiodasilva/calculadoraNeon-main.git
+   git clone https://github.com/lucianosergiodasilva/calculadoraNeon.git
 
    ```
